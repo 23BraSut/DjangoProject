@@ -15,7 +15,7 @@ Before building and running the application, you need to have the following inst
 To build and run the application inside a Docker container, follow these steps:
 
 1. Clone the repository:
-git clone https://github.com/your_username/my-django-app.git
+git clone https://github.com/23BraSut/DjangoProject
 
 2. Change directory to the project root:
 
