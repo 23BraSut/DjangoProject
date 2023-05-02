@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebsitePortfolio package &mdash; ProjectWeb 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="WebsitePortfolio.migrations package" href="WebsitePortfolio.migrations.html" />
+    <link rel="prev" title="WebsitePortfolio" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ProjectWeb
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">WebsitePortfolio</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">WebsitePortfolio package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WebsitePortfolio.migrations.html">WebsitePortfolio.migrations package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-WebsitePortfolio.admin">WebsitePortfolio.admin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-WebsitePortfolio.apps">WebsitePortfolio.apps module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.apps.WebsiteportfolioConfig"><code class="docutils literal notranslate"><span class="pre">WebsiteportfolioConfig</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-WebsitePortfolio.models">WebsitePortfolio.models module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.models.Choice"><code class="docutils literal notranslate"><span class="pre">Choice</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.models.Question"><code class="docutils literal notranslate"><span class="pre">Question</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.models.Ticket"><code class="docutils literal notranslate"><span class="pre">Ticket</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-WebsitePortfolio.tests">WebsitePortfolio.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-WebsitePortfolio.urls">WebsitePortfolio.urls module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-WebsitePortfolio.views">WebsitePortfolio.views module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.about"><code class="docutils literal notranslate"><span class="pre">about()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.authenticate_user"><code class="docutils literal notranslate"><span class="pre">authenticate_user()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.book_tickets"><code class="docutils literal notranslate"><span class="pre">book_tickets()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.detail"><code class="docutils literal notranslate"><span class="pre">detail()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.home"><code class="docutils literal notranslate"><span class="pre">home()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.logout_view"><code class="docutils literal notranslate"><span class="pre">logout_view()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.photos"><code class="docutils literal notranslate"><span class="pre">photos()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.register"><code class="docutils literal notranslate"><span class="pre">register()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.results"><code class="docutils literal notranslate"><span class="pre">results()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.submit_ticket"><code class="docutils literal notranslate"><span class="pre">submit_ticket()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.user_login"><code class="docutils literal notranslate"><span class="pre">user_login()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#WebsitePortfolio.views.vote"><code class="docutils literal notranslate"><span class="pre">vote()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-WebsitePortfolio">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ProjectWeb</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">WebsitePortfolio</a></li>
+      <li class="breadcrumb-item active">WebsitePortfolio package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/WebsitePortfolio.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="websiteportfolio-package">
+<h1>WebsitePortfolio package<a class="headerlink" href="#websiteportfolio-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="WebsitePortfolio.migrations.html">WebsitePortfolio.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="WebsitePortfolio.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WebsitePortfolio.migrations.html#module-WebsitePortfolio.migrations.0001_initial">WebsitePortfolio.migrations.0001_initial module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="WebsitePortfolio.migrations.html#WebsitePortfolio.migrations.0001_initial.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WebsitePortfolio.migrations.html#WebsitePortfolio.migrations.0001_initial.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="WebsitePortfolio.migrations.html#WebsitePortfolio.migrations.0001_initial.Migration.initial"><code class="docutils literal notranslate"><span class="pre">Migration.initial</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="WebsitePortfolio.migrations.html#WebsitePortfolio.migrations.0001_initial.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="WebsitePortfolio.migrations.html#module-WebsitePortfolio.migrations.0002_ticket_delete_ticketreservation">WebsitePortfolio.migrations.0002_ticket_delete_ticketreservation module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="WebsitePortfolio.migrations.html#WebsitePortfolio.migrations.0002_ticket_delete_ticketreservation.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WebsitePortfolio.migrations.html#WebsitePortfolio.migrations.0002_ticket_delete_ticketreservation.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="WebsitePortfolio.migrations.html#WebsitePortfolio.migrations.0002_ticket_delete_ticketreservation.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="WebsitePortfolio.migrations.html#module-WebsitePortfolio.migrations.0003_question_choice">WebsitePortfolio.migrations.0003_question_choice module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="WebsitePortfolio.migrations.html#WebsitePortfolio.migrations.0003_question_choice.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="WebsitePortfolio.migrations.html#WebsitePortfolio.migrations.0003_question_choice.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="WebsitePortfolio.migrations.html#WebsitePortfolio.migrations.0003_question_choice.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="WebsitePortfolio.migrations.html#module-WebsitePortfolio.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-WebsitePortfolio.admin">
+<span id="websiteportfolio-admin-module"></span><h2>WebsitePortfolio.admin module<a class="headerlink" href="#module-WebsitePortfolio.admin" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-WebsitePortfolio.apps">
+<span id="websiteportfolio-apps-module"></span><h2>WebsitePortfolio.apps module<a class="headerlink" href="#module-WebsitePortfolio.apps" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="WebsitePortfolio.apps.WebsiteportfolioConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.apps.</span></span><span class="sig-name descname"><span class="pre">WebsiteportfolioConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/apps.html#WebsiteportfolioConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.apps.WebsiteportfolioConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="WebsitePortfolio.apps.WebsiteportfolioConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#WebsitePortfolio.apps.WebsiteportfolioConfig.default_auto_field" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="WebsitePortfolio.apps.WebsiteportfolioConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'WebsitePortfolio'</span></em><a class="headerlink" href="#WebsitePortfolio.apps.WebsiteportfolioConfig.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-WebsitePortfolio.models">
+<span id="websiteportfolio-models-module"></span><h2>WebsitePortfolio.models module<a class="headerlink" href="#module-WebsitePortfolio.models" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Choice">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.models.</span></span><span class="sig-name descname"><span class="pre">Choice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/models.html#Choice"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.models.Choice" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>A model representing a choice for a poll question.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Choice.question">
+<span class="sig-name descname"><span class="pre">question</span></span><a class="headerlink" href="#WebsitePortfolio.models.Choice.question" title="Permalink to this definition"></a></dt>
+<dd><p>The question this choice belongs to.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#WebsitePortfolio.models.Question" title="WebsitePortfolio.models.Question">Question</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Choice.choice_text">
+<span class="sig-name descname"><span class="pre">choice_text</span></span><a class="headerlink" href="#WebsitePortfolio.models.Choice.choice_text" title="Permalink to this definition"></a></dt>
+<dd><p>The text of the choice.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Choice.votes">
+<span class="sig-name descname"><span class="pre">votes</span></span><a class="headerlink" href="#WebsitePortfolio.models.Choice.votes" title="Permalink to this definition"></a></dt>
+<dd><p>The number of votes this choice has received.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Choice.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#WebsitePortfolio.models.Choice.DoesNotExist" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Choice.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#WebsitePortfolio.models.Choice.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Question">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.models.</span></span><span class="sig-name descname"><span class="pre">Question</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/models.html#Question"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.models.Question" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>A model representing a question for a poll.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Question.question_text">
+<span class="sig-name descname"><span class="pre">question_text</span></span><a class="headerlink" href="#WebsitePortfolio.models.Question.question_text" title="Permalink to this definition"></a></dt>
+<dd><p>The text of the question.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Question.pub_date">
+<span class="sig-name descname"><span class="pre">pub_date</span></span><a class="headerlink" href="#WebsitePortfolio.models.Question.pub_date" title="Permalink to this definition"></a></dt>
+<dd><p>The date and time the question was published.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>datetime.datetime</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Question.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#WebsitePortfolio.models.Question.DoesNotExist" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Question.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#WebsitePortfolio.models.Question.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Ticket">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.models.</span></span><span class="sig-name descname"><span class="pre">Ticket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/models.html#Ticket"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.models.Ticket" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>A model representing a ticket for an event.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Ticket.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#WebsitePortfolio.models.Ticket.name" title="Permalink to this definition"></a></dt>
+<dd><p>The name of the ticket holder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Ticket.email">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#WebsitePortfolio.models.Ticket.email" title="Permalink to this definition"></a></dt>
+<dd><p>The email address of the ticket holder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Ticket.phone">
+<span class="sig-name descname"><span class="pre">phone</span></span><a class="headerlink" href="#WebsitePortfolio.models.Ticket.phone" title="Permalink to this definition"></a></dt>
+<dd><p>The phone number of the ticket holder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Ticket.date">
+<span class="sig-name descname"><span class="pre">date</span></span><a class="headerlink" href="#WebsitePortfolio.models.Ticket.date" title="Permalink to this definition"></a></dt>
+<dd><p>The date of the event the ticket is for.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>datetime.date</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Ticket.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#WebsitePortfolio.models.Ticket.DoesNotExist" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="WebsitePortfolio.models.Ticket.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#WebsitePortfolio.models.Ticket.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-WebsitePortfolio.tests">
+<span id="websiteportfolio-tests-module"></span><h2>WebsitePortfolio.tests module<a class="headerlink" href="#module-WebsitePortfolio.tests" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-WebsitePortfolio.urls">
+<span id="websiteportfolio-urls-module"></span><h2>WebsitePortfolio.urls module<a class="headerlink" href="#module-WebsitePortfolio.urls" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-WebsitePortfolio.views">
+<span id="websiteportfolio-views-module"></span><h2>WebsitePortfolio.views module<a class="headerlink" href="#module-WebsitePortfolio.views" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.about">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">about</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#about"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.about" title="Permalink to this definition"></a></dt>
+<dd><p>Renders the about.html template.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.authenticate_user">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">authenticate_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#authenticate_user"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.authenticate_user" title="Permalink to this definition"></a></dt>
+<dd><p>Authenticates user with provided credentials and redirects to the index page
+if the credentials are valid. If not, redirects to the login page with an error message.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.book_tickets">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">book_tickets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#book_tickets"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.book_tickets" title="Permalink to this definition"></a></dt>
+<dd><p>Renders the book_ticket.html template.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.detail">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">detail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">question_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#detail"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.detail" title="Permalink to this definition"></a></dt>
+<dd><p>Displays the details of a specific question.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.home">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">home</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#home"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.home" title="Permalink to this definition"></a></dt>
+<dd><p>Takes the user to the homepage/renders index.html.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.index">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#index"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.index" title="Permalink to this definition"></a></dt>
+<dd><p>Renders the index.html template.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.logout_view">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">logout_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#logout_view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.logout_view" title="Permalink to this definition"></a></dt>
+<dd><p>Logs out the current user and redirects to the login page.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.photos">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">photos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#photos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.photos" title="Permalink to this definition"></a></dt>
+<dd><p>Renders the photos.html template.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.register">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#register"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.register" title="Permalink to this definition"></a></dt>
+<dd><p>Registers a new user with provided credentials and redirects to the index page
+when successful. If any required fields are empty or passwords do not match,
+redirects to the register page with an error message.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.results">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">question_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#results"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.results" title="Permalink to this definition"></a></dt>
+<dd><p>Displays the results of a specific question.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.submit_ticket">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">submit_ticket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#submit_ticket"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.submit_ticket" title="Permalink to this definition"></a></dt>
+<dd><p>Submits a new ticket form, creates a new instance of the Ticket model,
+and redirects to the index page when successful.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.user_login">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">user_login</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#user_login"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.user_login" title="Permalink to this definition"></a></dt>
+<dd><p>Renders the login.html template.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="WebsitePortfolio.views.vote">
+<span class="sig-prename descclassname"><span class="pre">WebsitePortfolio.views.</span></span><span class="sig-name descname"><span class="pre">vote</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">question_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/WebsitePortfolio/views.html#vote"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#WebsitePortfolio.views.vote" title="Permalink to this definition"></a></dt>
+<dd><p>Saves the users selection to the database.</p>
+</dd></dl>
+
+</section>
+<section id="module-WebsitePortfolio">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-WebsitePortfolio" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="WebsitePortfolio" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="WebsitePortfolio.migrations.html" class="btn btn-neutral float-right" title="WebsitePortfolio.migrations package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Braden.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
